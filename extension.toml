@@ -1,17 +1,22 @@
 id = "dql"
 name = "DQL"
-version = "0.2.0"
+version = "0.3.0"
 schema_version = 1
 description = "DQL language ecosystem support for Zed — file-type recognition, syntax highlighting (via tree-sitter-dql), and LSP-driven diagnostics, hover, completion, format, and document symbols for .dql, .dqlef, .dqlsf, .dqlsn files."
 authors = ["Bohdan Agarkov <j4s0n4l3rt@gmail.com>"]
 repository = "https://github.com/keell0renz/zed-dql"
+themes = []
+icon_themes = []
+languages = ["languages/dql", "languages/dqlef", "languages/dqlsf", "languages/dqlsn"]
+capabilities = []
 
 [grammars.dql]
 repository = "https://github.com/keell0renz/tree-sitter-dql"
-commit = "f5cb0299e86554532f1f3850ec3dd2ec55ae9f4c"
+rev = "f5cb0299e86554532f1f3850ec3dd2ec55ae9f4c"
 
 [language_servers.dql-lsp]
 name = "dql-lsp"
+language = "DQL"
 languages = ["DQL", "DQL-EF", "DQL-SF", "DQL-SN"]
 
 [[language_servers.dql-lsp.binary]]

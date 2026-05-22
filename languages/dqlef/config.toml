@@ -1,4 +1,3 @@
-[language]
 name = "DQL-EF"
 grammar = "dql"
 path_suffixes = ["dqlef"]

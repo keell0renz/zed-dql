@@ -1,4 +1,3 @@
-[language]
 name = "DQL"
 grammar = "dql"
 path_suffixes = ["dql"]
