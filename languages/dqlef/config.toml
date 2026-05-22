@@ -1,0 +1,14 @@
+[language]
+name = "DQL-EF"
+grammar = "dql"
+path_suffixes = ["dqlef"]
+line_comments = ["// "]
+block_comment = false
+tab_size = 2
+hard_tabs = false
+brackets = [
+  { start = "(", end = ")", close = true, newline = false },
+  { start = "[", end = "]", close = true, newline = false },
+  { start = "{", end = "}", close = true, newline = false },
+]
+autoclose_before = ")];,"

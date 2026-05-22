@@ -1,0 +1,48 @@
+{
+  "_comment": [
+    "Zed does not currently support bundling custom file icons inside an extension.",
+    "This file documents the intended icon mappings for use with external icon themes",
+    "or for when Zed adds extension icon support.",
+    "",
+    "Manual workaround: use the Zed 'file_icons' setting in ~/.config/zed/settings.json.",
+    "See: https://zed.dev/docs/configuring-zed#file-icons",
+    "",
+    "Suggested mapping (copy the relevant block into your Zed settings):",
+    "",
+    "  \"file_icons\": {",
+    "    \"*.dql\":   { \"icon\": \"file-code\", \"color\": \"#2B6CB0\" },",
+    "    \"*.dqlef\": { \"icon\": \"file-text\", \"color\": \"#38A169\" },",
+    "    \"*.dqlsf\": { \"icon\": \"file-symlink-file\", \"color\": \"#D69E2E\" },",
+    "    \"*.dqlsn\": { \"icon\": \"file-binary\", \"color\": \"#805AD5\" }",
+    "  }",
+    "",
+    "Icon names above reference VS Code / Octicon names commonly used by Zed icon themes.",
+    "Exact icon availability depends on the active Zed icon theme."
+  ],
+  "file_types": {
+    "DQL": {
+      "extensions": ["dql"],
+      "suggested_icon": "file-code",
+      "suggested_color": "#2B6CB0",
+      "description": "DQL executable language — validation, querying, export"
+    },
+    "DQL-EF": {
+      "extensions": ["dqlef"],
+      "suggested_icon": "file-text",
+      "suggested_color": "#38A169",
+      "description": "DQL Extraction Format — AI-authored document extractions"
+    },
+    "DQL-SF": {
+      "extensions": ["dqlsf"],
+      "suggested_icon": "file-symlink-file",
+      "suggested_color": "#D69E2E",
+      "description": "DQL Schema/Profile Format — field schemas and examples"
+    },
+    "DQL-SN": {
+      "extensions": ["dqlsn"],
+      "suggested_icon": "file-binary",
+      "suggested_color": "#805AD5",
+      "description": "DQL Snapshot — human-readable run output"
+    }
+  }
+}
